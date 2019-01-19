@@ -1,0 +1,17 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: user
+  datasource:
+      url: jdbc:mysql://193.112.64.168:3306/js_user
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
